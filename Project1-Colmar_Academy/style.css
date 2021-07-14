@@ -1,0 +1,540 @@
+/*Universal Styles*/
+
+html {
+  font-size: 16px;
+  font-family: Tahoma, sans-serif;
+  line-height: 1.15;
+}
+
+/*Colmar Academy Header*/
+
+header {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+}
+
+.content img{
+  margin: 24px auto;
+  height: 32px;
+}
+
+
+strong {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black
+}
+
+.content span {
+  text-transform: uppercase;
+  font-family: Tahoma, sans-serif;
+  color: #CCCCCC;
+  font-size: 16px;
+}
+
+.mobile ul {
+  display: none;
+}
+
+.desktop ul {
+  list-style: none;
+  display: flex;
+  margin-top: -3.5rem;
+  justify-content: flex-end;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.desktop li {
+  padding-left: 0.05rem;
+  margin-right: 2rem;
+}
+
+.desktop a {
+  color:black;
+}
+
+.desktop a:hover {
+  color: rgb(7, 74, 120);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop ul {
+    display: none;
+  }
+  .content span {
+    display: none;
+  }
+  .mobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -5.5rem;
+  }
+  .mobile img {
+    height: 3rem;
+  }
+  .mobile li {
+    padding-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/*Colmar Academy Banner*/
+
+.container-fluid {
+  background-color: #CCCCCC;
+  margin-top: 1rem;
+  height: 50rem;
+  display: flex;
+}
+
+.container-fluid img {
+  margin-top: 32px;
+  padding-bottom: 24px;
+  width: 60%;
+}
+
+.texts {
+  color: #47453D;
+  padding-left: 4rem;
+  margin-top: 10rem;
+}
+
+.texts h2 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.texts .btn {
+  background-color: #47453D;
+  width: 25rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid img {
+    padding-top: 1.5rem;
+    width: 27rem;
+    height: 37rem;
+  }
+  .container-fluid {
+    height: 40rem;
+  }
+  .texts {
+    padding-left: 3rem;
+    margin-top: 7rem;
+  }
+  .texts h2 {
+    font-size: 3rem;
+  }
+  .texts .btn {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .container-fluid img {
+    width: 17rem;
+    height: 27rem;
+  }
+  .texts {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -3rem;
+  }
+  .texts h2 {
+    font-size: 2.5rem;
+  }
+  .container-fluid {
+    display: block;
+    background-color: #C6C5DB;
+    margin-top: -1.9rem;
+    height: 50rem;
+   }
+  .container-fluid img {
+    width: 100%;
+    padding: 0;
+   }
+  .texts .btn {
+    width: 100%;
+   }
+}
+
+/*Colmar Academy Main Section*/
+
+.main-section {
+  margin-left: 24px;
+}
+
+.main-section img {
+  width: 100%;
+  margin-top:32px;
+}
+
+.main-section h2 {
+  font-weight: 900;
+  margin-top: 3rem;
+  font-size: 2.8rem;
+  width: 84%;
+}
+
+.main-section p {
+  width: 84%; 
+  margin-top: 2rem;
+  color: #63695A;
+}
+
+.main-section h6 {
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+}
+
+aside {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.device {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.phone {
+  display: none;
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+}
+
+.orientation .list, .campus .list, .lecture .list {
+  margin-left: 1rem;
+}
+
+.list .title {
+  font-size: 2rem;
+  color: #3A3D34;
+  font-weight: bold;
+}
+
+.list .description {
+  color: #63695A;
+}
+
+.list .read-more {
+  color: rgba(65, 154, 255, 0.7);
+}
+
+.list .read-more a:hover {
+  color: rgb(43, 77, 171);
+  text-decoration: none;
+}
+
+.list .read-more {
+  cursor: move;
+}
+
+@media only screen and (max-width: 768px) {
+  .device {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 0.7rem;
+  }
+  .main-section img {
+    margin-top: -4.3rem;
+  }
+  .phone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .main-section {
+    display: none;
+  }
+  .main-information {
+    width: 50rem;
+    background-color: hsla(101, 30%, 50%, 0.1);
+  }
+  .orientation, .campus, .lecture {
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .device {
+    display: none;
+  }
+  .phone {
+    display: block;
+    width: 30rem;
+    margin-top: 3rem;
+  }
+  .list .title {
+    margin-top: 1rem;
+  }
+  .list .description {
+    width: 30rem;
+  }
+}
+
+/*Colmar Academy Courses*/
+
+.container {
+  margin-top: 4rem;
+  background-color: rgba(113, 115, 117, 0.2);
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 3;
+  font-size: 3rem;
+  color: #47453D;
+}
+
+.container .img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+.col-xs-12, .col-md-6, .col-lg-4 {
+  margin-bottom: 2rem;
+}
+
+.container .major {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem;
+  padding-top: 1rem;
+}
+
+.container .course {
+  text-transform: uppercase;
+  margin-left: 2rem;
+  color: #5B5D6E;
+}
+
+.container .module {
+  color: #5B5D6E;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.major a:hover {
+  color: #434552;
+}
+
+.major a:visited {
+  color: black;
+}
+
+.details {
+  background-color: white;
+  margin-top: -2rem;
+}
+
+.add {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1136px) {
+  .padding {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .details {
+    width: 53.2rem;
+  }
+  .container h2 {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .details {
+    width: 100%;
+  } 
+  .container h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .container h2 {
+    font-size: 2rem;
+  }
+  .img-fluid, .course, .module {
+    display: none;
+  }
+  .details {
+    background-color: rgba(113, 115, 117, 0.4);
+    height: 5rem;
+  }
+  .details .major {
+    font-size: 1.6rem;
+  }
+  .details .major a {
+    color: #44444A;
+    text-decoration: none;
+  }
+  .details .major a:visited {
+    color: MidnightBlue;
+  }
+  .details .major a:hover {
+    color: rgb(43, 77, 171);
+  }
+}
+
+/*Colmar Academy Thesis*/
+
+.method .link {
+  display: none;
+}
+
+.method .col-lg-12 {
+  text-align: center;
+  font-weight: 900;
+  line-height: 3;
+  font-size: 3rem;
+  color: #47453D;
+}
+
+.thesis-sidebar {
+  margin-top: 5rem;
+}
+
+.thesis {
+  display: flex;
+  margin-top: 10rem;
+}
+
+.fisma, .research {
+  display: flex;
+}
+
+.sidebar .point {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar .point a {
+  text-decoration: none;
+  color: #3A3D34;
+}
+
+.point a:hover {
+  color: rgb(43, 77, 171);
+}
+
+.sidebar .note {
+  color: #63695A;
+}
+
+.video {
+  width: 84%;
+  margin-left: 1.5rem;
+}
+
+.thesis-sidebar img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 4rem;
+ }
+
+.sidebar {
+  margin-left: 1rem;
+  margin-top: -0.5rem;
+}
+
+.video .desc {
+  margin-top: 2rem;
+  color: #63695A;
+}
+
+.video h3 {
+  font-weight: 900;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1099px) {
+  .thesis-sidebar img {
+    width: 60%;
+    margin-bottom: 4rem;
+ }
+  .sidebar .point {
+    font-size: 1.5rem;
+ }
+}
+
+@media only screen and (max-width: 997px) {
+  .fisma, .research {
+    display: block;
+  } 
+  .thesis-sidebar img {
+    margin-left: 1rem; 
+    width: 100%;
+  }
+  .sidebar {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width: 342px) {
+  .thesis-sidebar, .video h3, .video .desc, .method .col-lg-12 {
+    display: none;
+  }
+  .method .link {
+    margin-left: 7rem;
+    display: inline-flex;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  .method .link a {
+    color: #47453D;
+    text-decoration: none;
+  }
+  .method .link a:hover {
+    color: #449795;
+  }
+  .video video {
+    margin-bottom: 5rem;
+  }
+}
+
+/*Colmar Academy Footer*/
+
+footer {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #E1E5FF;
+  width: 100%;
+  padding-top: 2rem;
+  color: #63695A;
+  font-size: 1.2rem;
+}
+
+.footer .terms {
+  float: right;
+  position: relative;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 342px) {
+  .footer .terms {
+    display: none;
+  }
+}
